@@ -50,6 +50,7 @@ function handleButton() {
     const startTime = Date.now();
     const countdown = userSelectedDate.selectedDates[0] - startTime;
     button.disabled = true;
+    inputData.disabled = true;
     button.classList.replace('on-active', 'not-activated');
     const time = convertMs(countdown);
 
