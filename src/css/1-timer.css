@@ -19,7 +19,7 @@ input[type="text"] {
     line-height: 150%;
     letter-spacing: 0.04em;
     color: #2e2f42;
-    /* padding: 8px 16px; */
+    padding: 8px 16px;
 }
 
 .on-active {
