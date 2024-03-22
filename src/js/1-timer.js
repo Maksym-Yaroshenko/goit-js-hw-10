@@ -26,7 +26,6 @@ let options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0].getTime() < Date.now()) {
-      // window.alert('Please choose a date in the future');
       iziToast.show({
         backgroundColor: '#ef4040',
         messageColor: 'white',
@@ -38,7 +37,7 @@ let options = {
       button.disabled = true;
       button.classList.replace('on-active', 'not-activated');
     } else {
-      console.log(userSelectedDate.selectedDates[0]);
+      // console.log(userSelectedDate.selectedDates[0]);
       button.disabled = false;
       button.classList.replace('not-activated', 'on-active');
     }
