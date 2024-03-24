@@ -37,7 +37,7 @@ let options = {
       button.disabled = true;
       button.classList.replace('on-active', 'not-activated');
     } else {
-      // console.log(userSelectedDate.selectedDates[0]);
+      console.log(userSelectedDate.selectedDates[0]);
       button.disabled = false;
       button.classList.replace('not-activated', 'on-active');
     }
@@ -46,8 +46,8 @@ let options = {
 
 function handleButton() {
   timerId = setInterval(() => {
-    const startTime = Date.now();
-    const countdown = userSelectedDate.selectedDates[0] - startTime;
+    const countdown =
+      userSelectedDate.selectedDates[0].getTime() - new Date().getTime();
     button.disabled = true;
     inputData.disabled = true;
     button.classList.replace('on-active', 'not-activated');
